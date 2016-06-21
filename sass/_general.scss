@@ -1,0 +1,29 @@
+body{
+  background-color: #282828;
+  margin : 0 auto;
+
+
+
+  #container{
+    margin: 0 auto;
+    width: 80%;
+    overflow: visible;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+
+    //position: relative;
+  }
+
+  h1{
+    color: white;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+
+  }
+}
