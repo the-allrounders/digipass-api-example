@@ -172,6 +172,8 @@ function process_user_preferences(preferences) {
                 const filter_button = document.querySelector(`[data-key="${filter.key}"]`);
                 user_active_filters.push(get_active_filter_object(filter_button));
                 new_active_filter_buttons.push(filter_button);
+              } else {
+                document.querySelector(`[data-key="${filter.key}"]`).classList.remove('active');
               }
             });
           });
