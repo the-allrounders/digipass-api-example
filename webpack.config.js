@@ -1,7 +1,7 @@
 
 
 module.exports = {
-    entry: './src/index.js',    // Het bestand/directory met ES2015-code
+    entry: ['whatwg-fetch', './src/index.js'],    // Het bestand/directory met ES2015-code
     output: {
         path: './dist/js',           // De directory waarin Webpack omgeschreven bestanden opslaat.
         filename: 'bundle.js'     // De naam van het bestand met de omgeschreven ES2015 code (ES5 dus).

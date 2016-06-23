@@ -7,8 +7,9 @@ const organisation_token = 'lol456';
 let user_id;
 
 let user_preferences = {};
-let temp_user_preferences = user_preferences;
 let user_active_filters = [];
+
+let refresh_switch = true;
 
 const available_filters = {
   "meal_type": [
@@ -96,6 +97,10 @@ function init() {
   print_filters();
   print_dishes();
   setInterval(fetch_user_preferences, 1000);
+}
+
+function toggle_refresh_switch() {
+
 }
 
 function toggle_user_sidebar(e) {
