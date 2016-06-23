@@ -3,9 +3,10 @@
     width: 100%;
     display: block;
   }
-  flex: 1;
+  flex: 1 0 0px;
   perspective: 900px;
   min-width: 350px;
+  max-width: 350px;
   margin-left: 15px;
   margin-bottom: 40px;
   position: relative;
