@@ -191,7 +191,7 @@ function process_user_preferences(preferences) {
             user_active_filters.push(get_active_filter_object(filter_button));
             new_active_filter_buttons.push(filter_button);
           } else {
-            document.querySelector(`[data-key="vegetarian"]`).classList.remove('active');
+            document.querySelector(`[data-key="vegan"]`).classList.remove('active');
           }
           break;
       }
