@@ -9,16 +9,24 @@
         "key": "gluten"
       }
     ],
-    "vegetarian":  {
-      "label": "Vegetarian",
-      "key": "vegetarian",
-      "value": false
-    },
-    "vegan":  {
-      "label": "Vegan",
-      "key": "vegan",
-      "value": false
-    },
+    "meal_type": "main_course",
+    "filters": [
+      {
+        "label": "Vegetarian",
+        "key": "vegetarian",
+        "value": false
+      },
+      {
+        "label": "Vegan",
+        "key": "vegan",
+        "value": false
+      },
+      {
+        "label": "Halal",
+        "key": "halal",
+        "value": false
+      }
+    ],
     "image": "http://www.jannekekroon.com/files/gimgs/32_parelhoenvenkeleind.jpg",
     "ingredients": [
       "Aardappel",
@@ -37,23 +45,29 @@
       }
     ]
   },
-
   {
     "id": "2",
     "name": "Gebakken scholvis op een bedje van asperges en druiven",
     "course": "Hoofdgerecht",
-    "allergens": [
-     ],
-    "vegetarian":  {
-      "label": "Vegetarian",
-      "key": "vegetarian",
-      "value": true
-    },
-    "vegan":  {
-      "label": "Vegan",
-      "key": "vegan",
-      "value": false
-    },
+    "allergens": [],
+    "meal_type": "main_course",
+    "filters": [
+      {
+        "label": "Vegetarian",
+        "key": "vegetarian",
+        "value": true
+      },
+      {
+        "label": "Vegan",
+        "key": "vegan",
+        "value": false
+      },
+      {
+        "label": "Halal",
+        "key": "halal",
+        "value": false
+      }
+    ],
     "image": "http://www.jannekekroon.com/files/gimgs/32_doradeaspergeseind.jpg",
     "ingredients": [
       "scholvis",
@@ -76,24 +90,29 @@
       }
     ]
   },
-
   {
     "id": "3",
     "name": "Entrecote met een witlofsalade en kappertjes",
     "course": "Hoofdgerecht",
-    "allergens": [
-
+    "allergens": [],
+    "meal_type": "main_course",
+    "filters": [
+      {
+        "label": "Vegetarian",
+        "key": "vegetarian",
+        "value": false
+      },
+      {
+        "label": "Vegan",
+        "key": "vegan",
+        "value": false
+      },
+      {
+        "label": "Halal",
+        "key": "halal",
+        "value": false
+      }
     ],
-    "vegetarian":  {
-      "label": "Vegetarian",
-      "key": "vegetarian",
-      "value": false
-    },
-    "vegan":  {
-      "label": "Vegan",
-      "key": "vegan",
-      "value": false
-    },
     "image": "http://www.jannekekroon.com/files/gimgs/32_entrecotevenkeleind.jpg",
     "ingredients": [
       "Witlof",
@@ -116,7 +135,6 @@
       }
     ]
   },
-
   {
     "id": "4",
     "name": "Voorjaarsalde van forel met radijsjes en hazelnoten",
@@ -127,16 +145,24 @@
         "key": "noten"
       }
     ],
-    "vegetarian":  {
-      "label": "Vegetarian",
-      "key": "vegetarian",
-      "value": true
-    },
-    "vegan":  {
-      "label": "Vegan",
-      "key": "vegan",
-      "value": false
-    },
+    "meal_type": "entree",
+    "filters": [
+      {
+        "label": "Vegetarian",
+        "key": "vegetarian",
+        "value": true
+      },
+      {
+        "label": "Vegan",
+        "key": "vegan",
+        "value": false
+      },
+      {
+        "label": "Halal",
+        "key": "halal",
+        "value": false
+      }
+    ],
     "image": "http://www.jannekekroon.com/files/gimgs/32_voorjaarsaladeforeleind.jpg",
     "ingredients": [
       "Forel",
@@ -159,7 +185,6 @@
       }
     ]
   },
-
   {
     "id": "5",
     "name": "Een risotto van pompoen met geitenkaas",
@@ -170,16 +195,24 @@
         "key": "zuivel"
       }
     ],
-    "vegetarian":  {
-      "label": "Vegetarian",
-      "key": "vegetarian",
-      "value": true
-    },
-    "vegan":  {
-      "label": "Vegan",
-      "key": "vegan",
-      "value": false
-    },
+    "meal_type": "entree",
+    "filters": [
+      {
+        "label": "Vegetarian",
+        "key": "vegetarian",
+        "value": true
+      },
+      {
+        "label": "Vegan",
+        "key": "vegan",
+        "value": false
+      },
+      {
+        "label": "Halal",
+        "key": "halal",
+        "value": false
+      }
+    ],
     "image": "http://www.jannekekroon.com/files/gimgs/32_risottopompoeneind.jpg",
     "ingredients": [
       "Risotto",
@@ -201,7 +234,6 @@
       }
     ]
   },
-
    {
     "id": "6",
     "name": "Een minilasagna met geroosterde groente en foccocia",
@@ -212,16 +244,24 @@
          "key": "zuivel"
        }
      ],
-     "vegetarian":  {
-       "label": "Vegetarian",
-       "key": "vegetarian",
-       "value": true
-     },
-     "vegan":  {
-       "label": "Vegan",
-       "key": "vegan",
-       "value": false
-     },
+     "meal_type": "entree",
+     "filters": [
+       {
+         "label": "Vegetarian",
+         "key": "vegetarian",
+         "value": true
+       },
+       {
+         "label": "Vegan",
+         "key": "vegan",
+         "value": false
+       },
+       {
+         "label": "Halal",
+         "key": "halal",
+         "value": false
+       }
+     ],
     "image": "http://www.jannekekroon.com/files/gimgs/32_eicocotteeind2.jpg",
     "ingredients": [
       "Paprika",
@@ -244,7 +284,6 @@
        }
      ]
   },
-
   {
     "id": "7",
     "name": "Gecarameliseerde appelen met eigen gemaakte slagroom",
@@ -255,16 +294,24 @@
         "key": "noten"
       }
     ],
-    "vegetarian":  {
-      "label": "Vegetarian",
-      "key": "vegetarian",
-      "value": true
-    },
-    "vegan":  {
-      "label": "Vegan",
-      "key": "vegan",
-      "value": false
-    },
+    "meal_type": "dessert",
+    "filters": [
+      {
+        "label": "Vegetarian",
+        "key": "vegetarian",
+        "value": true
+      },
+      {
+        "label": "Vegan",
+        "key": "vegan",
+        "value": false
+      },
+      {
+        "label": "Halal",
+        "key": "halal",
+        "value": false
+      }
+    ],
     "image": "http://www.jannekekroon.com/files/gimgs/32_bakedappleeind1.jpg",
     "ingredients": [
       "Appelen",
@@ -288,7 +335,6 @@
       }
     ]
   },
-
   {
     "id": "8",
     "name": "Gebakken rabarbercrumble",
@@ -299,16 +345,24 @@
         "key": "gluten"
       }
     ],
-    "vegetarian":  {
-      "label": "Vegetarian",
-      "key": "vegetarian",
-      "value": true
-    },
-    "vegan":  {
-      "label": "Vegan",
-      "key": "vegan",
-      "value": false
-    },
+    "meal_type": "dessert",
+    "filters": [
+      {
+        "label": "Vegetarian",
+        "key": "vegetarian",
+        "value": true
+      },
+      {
+        "label": "Vegan",
+        "key": "vegan",
+        "value": false
+      },
+      {
+        "label": "Halal",
+        "key": "halal",
+        "value": false
+      }
+    ],
     "image": "http://www.jannekekroon.com/files/gimgs/32_rabarbercrumbleeind.jpg",
     "ingredients": [
       "Rabarber",
@@ -331,7 +385,6 @@
       }
     ]
   },
-
   {
     "id": "9",
     "name": "Chocolademousse van pure chocola met slagroom",
@@ -342,16 +395,24 @@
         "key": "zuivel"
       }
     ],
-    "vegetarian":  {
-      "label": "Vegetarian",
-      "key": "vegetarian",
-      "value": true
-    },
-    "vegan":  {
-      "label": "Vegan",
-      "key": "vegan",
-      "value": false
-    },
+    "meal_type": "dessert",
+    "filters": [
+      {
+        "label": "Vegetarian",
+        "key": "vegetarian",
+        "value": true
+      },
+      {
+        "label": "Vegan",
+        "key": "vegan",
+        "value": false
+      },
+      {
+        "label": "Halal",
+        "key": "halal",
+        "value": false
+      }
+    ],
     "image": "http://www.jannekekroon.com/files/gimgs/32_chocolademousseeind.jpg",
     "ingredients": [
       "Cacoa",
@@ -373,6 +434,4 @@
       }
     ]
   }
-
-
 ]
