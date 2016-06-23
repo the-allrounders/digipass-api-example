@@ -1,10 +1,8 @@
-body{
+body {
   background-color: #282828;
-  margin : 0 auto;
+  margin: 0 auto;
 
-
-
-  #container{
+  #container {
     margin: 0 auto;
     width: 80%;
     overflow: visible;
@@ -16,11 +14,9 @@ body{
     -o-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-font-smoothing: antialiased;
-
-    //position: relative;
   }
 
-  h1{
+  h1 {
     color: white;
     text-align: center;
     font-family: 'Signika', sans-serif;
