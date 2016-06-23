@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href='https://fonts.googleapis.com/css?family=Hind:400' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=PT+Serif+Caption:400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
-    <title>Title</title>
+    <link href='https://fonts.googleapis.com/css?family=Hind:400' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif+Caption:400italic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Menukaart - Restaurant Zeezicht</title>
 </head>
 <body>
     <h1>Menukaart</h1>
-    <div id="filters_container">
-        <div id="inner_filters"></div>
+    <div id="users-container"></div>
+    <button id="toggle-users-sidebar" class="button"><span>Gebruikers</span><i class="material-icons user-icon">supervisor_account</i></button>
+    <div id="filters-container">
+        <div id="inner-filters"></div>
+        <ul class="filters-container"><button id="show-inner-filters" class="button"><span>Personaliseer menukaart</span><i class="material-icons arrow-down">keyboard_arrow_down</i></button></ul>
     </div>
-    <div id="dishes_container"></div>
+    <div id="dishes-container"></div>
 <script src="js/bundle.js"></script>
 </body>
 </html>

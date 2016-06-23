@@ -1,0 +1,49 @@
+#filters-container {
+  min-width: 350px;
+  max-width: 850px;
+  width: 80%;
+  margin: 0 auto 24px;
+}
+
+.filters-container {
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.filter-wrapper {
+  list-style: none;
+}
+
+#inner-filters {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.2s ease-in-out;
+  .inner-filters-visible & {
+    max-height: 625px;
+    @include breakpoint(tablet) {
+      max-height: 460px;
+    }
+    @include breakpoint(desktop) {
+      max-height: 310px;
+    }
+  }
+}
+
+#show-inner-filters {
+  span {
+    padding-right: 8px;
+  }
+  .arrow-down {
+    transition: transform 0.2s ease-in-out;
+    position: absolute;
+    margin-top: -4px;
+  }
+  &.active {
+    .arrow-down {
+      transform: rotate(180deg);
+    }
+  }
+}

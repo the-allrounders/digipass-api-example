@@ -6,7 +6,7 @@
     "allergens": [
       {
         "label": "Gluten",
-        "key": "gluten"
+        "key": "57669e2ed0bf105540f743d1"
       }
     ],
     "meal_type": "main_course",
@@ -142,7 +142,7 @@
     "allergens": [
       {
         "label": "Noten",
-        "key": "noten"
+        "key": "57669e2ed0bf105540f743d2"
       }
     ],
     "meal_type": "entree",
@@ -291,7 +291,7 @@
     "allergens": [
       {
         "label": "Noten",
-        "key": "noten"
+        "key": "57669e2ed0bf105540f743d2"
       }
     ],
     "meal_type": "dessert",
@@ -342,7 +342,7 @@
     "allergens": [
       {
         "label": "Gluten",
-        "key": "gluten"
+        "key": "57669e2ed0bf105540f743d1"
       }
     ],
     "meal_type": "dessert",
@@ -392,7 +392,7 @@
     "allergens": [
       {
         "label": "Zuivel",
-        "key": "zuivel"
+        "key": "57669e2ed0bf105540f743c8"
       }
     ],
     "meal_type": "dessert",
