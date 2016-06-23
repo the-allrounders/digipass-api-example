@@ -1,6 +1,6 @@
 import './sass/style.scss';
 
-const base_url = 'http://digipass-api.herokuapp.com/api';
+const base_url = 'https://digipass-api.herokuapp.com/api';
 const organisation_id = '576b90806013e1995016f345';
 const organisation_token = 'lol456';
 
@@ -93,9 +93,9 @@ function init() {
   document.querySelector('#dishes-container').addEventListener('click', flip_card);
   document.querySelector('#show-inner-filters').addEventListener('click', toggle_inner_filters);
   document.querySelector('#toggle-users-sidebar').addEventListener('click', toggle_user_sidebar);
-  fetch_users();
   print_filters();
   print_dishes();
+  setInterval(fetch_users, 1000);
   setInterval(fetch_user_preferences, 1000);
 }
 
@@ -124,7 +124,7 @@ function fetch_users() {
 function print_users(users) {
   const users_container = document.querySelector('#users-container');
   const users_html = users.map(format_user);
-  users_container.insertAdjacentHTML('beforeend', `<h2>Gebruikers in dit restaurant</h2><ul id="users-container-inner">${users_html.join('')}</ul>`);
+  users_container.innerHTML = `<h2>Gebruikers in dit restaurant</h2><ul id="users-container-inner">${users_html.join('')}</ul>`;
 }
 
 function format_user(user) {
@@ -161,7 +161,7 @@ function fetch_user_preferences() {
 }
 
 function process_user_preferences(preferences) {
-  if (preferences && preferences.length && user_preferences.toString() != preferences.toString()) {
+  if (preferences && preferences.length && JSON.stringify(user_preferences) != JSON.stringify(preferences)) {
     const new_active_filter_buttons = [];
     preferences.forEach(preference => {
       switch (preference.title) {
@@ -181,6 +181,8 @@ function process_user_preferences(preferences) {
             const filter_button = document.querySelector(`[data-key="vegetarian"]`);
             user_active_filters.push(get_active_filter_object(filter_button));
             new_active_filter_buttons.push(filter_button);
+          } else {
+            document.querySelector(`[data-key="vegetarian"]`).classList.remove('active');
           }
           break;
         case 'Veganistisch':
@@ -188,18 +190,20 @@ function process_user_preferences(preferences) {
             const filter_button = document.querySelector(`[data-key="vegan"]`);
             user_active_filters.push(get_active_filter_object(filter_button));
             new_active_filter_buttons.push(filter_button);
+          } else {
+            document.querySelector(`[data-key="vegetarian"]`).classList.remove('active');
           }
           break;
       }
     });
     if (user_active_filters.length) {
-      if (confirm("Er zijn nieuwe voorkeuren voor jou binnen gekomen. Menukaart aanpassen?")) {
+      // if (confirm("Er zijn nieuwe voorkeuren voor jou binnen gekomen. Menukaart aanpassen?")) {
         new_active_filter_buttons.forEach(filter => {
           filter.classList.add('active');
         });
         active_filters = active_filters.concat(user_active_filters);
         print_dishes();
-      }
+      // }
     }
   }
   user_preferences = preferences;
